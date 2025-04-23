@@ -1,0 +1,96 @@
+/* src/pages/CardsPage.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./CreatoDisplay-Regular.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'CustomFont', sans-serif;
+   
+}
+.search-box {
+    display: block;
+    margin: 20px auto;
+    background-color: #a64da6;
+    padding: 10px 15px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  }
+  .search-box::placeholder {
+    color: #fff;
+  }
+
+.cards-page {
+    padding: 40px 20px;
+    background-color: #fff;
+    min-height: 100vh;
+    width: 100%;
+    margin: 20px auto;
+    animation: slideIn 1s ease-in-out;
+    border-radius: 28px; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    
+    color: #a64da6;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 768px) {
+    .cards-page {
+      padding: 20px 10px;
+      border-radius: 20px;
+    margin: 110px auto;
+      
+    }
+  
+    .page-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

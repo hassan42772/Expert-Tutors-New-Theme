@@ -1,0 +1,92 @@
+.tutor-details {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease;
+  }
+  
+  .tutor-details:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tutor-details img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #a64da6;
+   
+  }
+  
+  .tutor-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .tutor-details .tutor-data {
+    font-size: 18px;
+    color: #555;
+    margin: 8px 0;
+  }
+  
+  .verified-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: green;
+    padding: 8px 10px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 10px auto;
+  }
+  
+  .back-btn,
+  .contact-btn {
+    display: inline-block;
+    margin: 20px 10px 0 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #a64da6;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .back-btn:hover,
+  .contact-btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 600px) {
+    .tutor-details {
+      padding: 20px;
+      margin-top: 110px;
+    }
+  
+    .tutor-details h2 {
+      font-size: 24px;
+    }
+  
+    .tutor-details p {
+      font-size: 16px;
+    }
+  
+    .back-btn,
+    .contact-btn {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  

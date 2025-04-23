@@ -1,0 +1,89 @@
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* General styles for the login form */
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #a64da6;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  animation: slideIn 1s ease-in-out;
+}
+
+.login-form h2 {
+  color: #a64da6;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  
+  border-radius: 28px;
+  background-color: #a64da6;
+  color: white;
+  border: none;
+  margin-bottom: 5px;
+}
+
+
+.loginbtn {
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginbtn:hover {
+  background-color: black;
+  color: orange;
+  border: 1px solid orange;
+}

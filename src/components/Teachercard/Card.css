@@ -1,0 +1,115 @@
+/* src/components/Card.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./CreatoDisplay-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'CustomFont', sans-serif;
+   
+}
+.card-tutor {
+    background-color: #a64da6;
+    border-radius: 22px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: slideIn 1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+  }
+  
+  .card-tutor:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-tutor-image {
+    width: 80%;
+    
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+  
+  .card-tutor-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: white;
+
+   
+
+  }
+  
+  .card-tutor-subject,
+  .card-tutor-qualification {
+    margin: 4px 0;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .card-tutor-verified {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 0.85rem;
+    border-radius: 20px;
+  }
+  @media (max-width: 768px) {
+    .card-tutor {
+      width: 90%;
+      margin: 12px auto;
+      padding: 20px;
+    }
+  
+    .card-tutor-name {
+      font-size: 1rem;
+    }
+  
+    .card-tutor-subject,
+    .card-tutor-qualification {
+      font-size: 0.85rem;
+    }
+  
+    .card-tutor-verified {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-tutor {
+      width: 95%;
+      padding: 16px;
+    }
+  
+    .card-tutor-image {
+      width: 70%;
+    }
+  
+    .card-tutor-name {
+      font-size: 0.95rem;
+    }
+  
+    .card-tutor-subject,
+    .card-tutor-qualification {
+      font-size: 0.8rem;
+    }
+  
+    .card-tutor-verified {
+      font-size: 0.75rem;
+    }
+  }
+  

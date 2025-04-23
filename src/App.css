@@ -1,0 +1,38 @@
+#root {
+  max-width: 100%;
+  /* margin: 0 auto; */
+  padding: 2rem;
+  text-align: center;
+  /* background-color: rgb(190, 138, 40); */
+  background-color: rgb(255, 255, 255);
+ 
+}
+
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: white; /* Background of the scrollbar track */
+  border-radius: 6px; /* Optional: Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a64da6; /* Color of the scrollbar thumb */
+  border-radius: 20px; /* Optional: Rounded corners for the thumb */
+  border: 5px solid black; /* Optional: Border around the thumb for better visibility */
+}
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./CreatoDisplay-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar width */
+  scrollbar-color: #a64da6 white; /* Thumb color and track color */
+  font-family: 'CustomFont', sans-serif;
+}

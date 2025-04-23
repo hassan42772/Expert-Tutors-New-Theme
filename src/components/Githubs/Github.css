@@ -1,0 +1,253 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.service-city {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+.service-city h2{
+    color: #a64da6;
+    
+}
+
+.buttons {
+    margin-bottom: 20px;
+    background-color: #a64da6;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 28px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #a64da6;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    font-weight: 700;
+}
+
+.buttons button:hover {
+    background-color: #2F2E41;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+    border-radius: 28px;
+    
+    /* height: 50vh; */
+}
+
+.map-image {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.marker {
+    position: absolute;
+}
+
+.marker i {
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.area-list {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.area-list ul {
+    max-width: 740px;
+    height: auto;
+    margin: 20px auto;
+    padding-top: 20px;
+    list-style: square;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    border: 2px solid #a64da6;
+    border-radius: 20px;
+}
+
+.area-list li {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: large;
+    text-align: start;
+    color: #2F2E41;
+}
+
+.area-list ul:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.area-list li:hover {
+    color: #a64da6;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .buttons {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .buttons button {
+        margin: 8px;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .map-container {
+        height: auto;
+    }
+
+    .marker i {
+        font-size: 28px;
+
+    }
+
+    .area-list ul {
+        padding-left: 30px;
+    }
+
+    .area-list li {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 992px) {
+    .buttons {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .buttons button {
+        margin: 6px;
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+
+    .map-container {
+        height: auto;
+    }
+
+    .marker i {
+        font-size: 26px;
+    }
+
+    .area-list ul {
+        padding-left: 25px;
+    }
+
+    .area-list li {
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-city{
+        margin-top: 120px;
+    }
+    .buttons {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .buttons button {
+        margin: 5px;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .map-container {
+        height: auto;
+    }
+
+    .marker i {
+        font-size: 25px;
+    }
+
+    .area-list ul {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area-list li {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 480px) {
+    .buttons {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .buttons button {
+        margin: 3px;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+
+    .marker {
+        display: none;
+    }
+
+ 
+
+    .area-list li {
+        font-size: small;
+    }
+}

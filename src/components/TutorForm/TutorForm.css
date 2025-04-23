@@ -1,0 +1,153 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.text-section h1 {
+    color: #a64da6;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+    line-height: 1.4;
+}
+
+.text-section span {
+    color: #a64da6;
+}
+
+hr {
+    border: 2px solid #a64da6;
+    border-radius: 20px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.text-section .Team {
+    color: #2F2E41;
+    font-size: 1.2rem;
+}
+
+.Success {
+    color: #a64da6;
+    font-size: 1.9rem;
+    margin-top: 10px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #a64da6;
+    border-radius: 10px;
+    animation: slideIn 1s ease-in-out;
+    border: 2px solid #a64da6;
+    border-radius: 20px;
+}
+
+.form-section h2 {
+    color: #a64da6;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #a64da6;
+    border-radius: 25px;
+    background-color: #a64da6;
+    color: white;
+}
+.form-section input::placeholder {
+    color: white;
+}
+.form-section textarea::placeholder {
+    color: white;
+}
+.form-section textarea {
+    min-height: 80px;
+    max-width: 600px;
+}
+
+.form-section input[type="file"] {
+    padding: 25px;
+    
+}
+
+.form-section button {
+    padding: 10px 20px;
+    background-color: #a64da6;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #2F2E41;
+    color: white;
+    border: 1px solid white;
+}
+
+.CallNow {
+    padding: 10px 20px;
+    background-color: #a64da6;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.CallNow:hover {
+    background-color: #2F2E41;
+    color: white;
+    border: 1px solid white;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 110px;   
+
+        
+    }
+}

@@ -1,0 +1,314 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: black; */
+    background-color:#a64da6;
+    padding: 5px 20px;
+    border-radius: 15px;
+    animation: fadeIn 3s ease-in-out;
+    transition: background-color 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    color: white;
+
+}
+
+.logo-text span {
+    line-height: 1;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+    font-size: small;
+    transition: background-color 0.3s;
+}
+
+
+.nav-buttons .get-started {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: small;
+    color: white;
+    transition: background-color 0.3s;
+
+}
+
+
+
+.nav-buttons .get-started {
+    background-color: white;
+    color: #a64da6;
+    border-radius: 20px;
+}
+
+.get-started:hover {
+    background-color: #2F2E41;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+.ForStudent{
+    color: #a64da6;
+    font-weight: bold;
+}
+.ForStudent:hover{
+    color: white;
+    font-weight: bold;
+}
+.bar{
+    display: none;
+}
+
+.nav-link {
+    border-bottom: 1px solid transparent;
+    color: white; /* This is the equivalent of text-gray-700 */
+    
+}
+
+
+
+.nav-link:hover .lg-hover {
+    background-color: orange;/* This is the equivalent of lg:hover:bg-transparent */
+    border: none;
+    color: white; /* Remove border on large screens */
+}
+
+.nav-link:hover { /* This is the equivalent of hover:text-orange-700 */
+    padding: 3px; /* This is the equivalent of lg:p-0 */
+    
+    color: white;
+  
+}
+
+.nav-link.active {
+    border-bottom: 3px solid  white;
+   
+
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #a64da6;
+    padding: 10px;
+    border-radius: 15px;
+    position: absolute;
+    
+    left: 8%;
+    width: 100%;
+    max-width: 84%;
+    animation: slideIn 0.3s ease-in-out;
+    margin: 0 auto;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.mobile-nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mobile-nav-links li {
+    text-align: center;
+    
+    border-radius: 28px;
+    
+}
+
+.mobile-nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    display: block;
+    padding: 10px;
+}
+
+
+
+.mobile-nav-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.mobile-nav-buttons .get-started {
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.mobile-nav-buttons .get-started:hover {
+    background-color: orange;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar{
+        margin-bottom: 70px;
+    }
+   
+    .nav-links {
+        display: none;
+    }
+    .nav-buttons {
+        display: flex;
+    }
+    .bar{
+        display: block;
+        color: white;
+    }
+    .mobile-menu{
+        display: flex;
+        top: 13%;
+        
+    }
+}
+
+
+
+
+@media (max-width: 480px){
+    .nav-links {
+        padding: 5px;
+    }
+
+    .nav-buttons {
+        padding: 5px;
+        font-size: smaller;
+    }
+    .nav-buttons .get-started {
+        width: auto;
+        padding: 8px 6px;
+        border-radius: 17px;
+    }
+    .ForStudent{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .bar{
+        padding: 7px;
+        
+    }
+    .mobile-menu{
+       top: 13%;
+    }
+    .logo img{
+        width: 35px;
+        height: 35px;
+    }
+    .logo-text{
+        font-size: 12px;
+    }
+    .mobile-menu{
+        top: 14%;
+     }
+}
+
+@media (max-width: 390px){
+    .logo img{
+        width: 35px;
+        height: 35px;
+    }
+    .logo-text{
+        font-size: 10px;
+    }
+    .nav-links {
+        padding: 5px;
+    }
+
+    .nav-buttons {
+        padding: 5px;
+        font-size: smaller;
+    }
+    .nav-buttons .get-started {
+        width: auto;
+        padding: 7px 2px;
+    }
+    .ForStudent{
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .bar{
+        padding: 7px;
+        
+    }
+    .mobile-menu{
+       top: 15%;
+    }
+}

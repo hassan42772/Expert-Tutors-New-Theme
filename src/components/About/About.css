@@ -1,0 +1,245 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .about {
+    text-align: center;
+    padding: 20px 0;
+    animation: slideIn 1s ease-in-out;
+    
+  }
+  
+  .about-span {
+    color: #a64da6;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .about-intro {
+    background-color: white;
+    color: #2f2e4192;
+    padding: 50px 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  }
+  
+  .about-intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #a64da6;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .about-intro p {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .team {
+    padding: 50px 0;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  }
+  
+  .team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #a64da6;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    min-width: 250px;
+  }
+  .team-member h3 {
+    font-size: 24px;
+   
+    color: #a64da6;
+  }
+  .team-member p {
+    font-size: 18px;
+    color: #726e6e;
+  }
+  
+  .team-member img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    
+    
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+  
+  .mission {
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  }
+  
+  .mission h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #a64da6;
+  }
+  
+  .mission p {
+    font-size: 24px;
+    color: #726e6e;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  @media (max-width: 1200px) {
+    .about-intro h1 {
+      font-size: 40px;
+    }
+  
+    .about-intro p {
+      font-size: 20px;
+    }
+  
+    .team h2,
+    .mission h2 {
+      font-size: 32px;
+    }
+  
+    .mission p {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-intro {
+      padding: 40px 20px;
+    }
+  
+    .team,
+    .mission {
+      padding: 40px 20px;
+    }
+  
+    .about-intro h1 {
+      font-size: 36px;
+    }
+  
+    .about-intro p {
+      font-size: 18px;
+    }
+  
+    .team h2,
+    .mission h2 {
+      font-size: 28px;
+    }
+  
+    .mission p {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about{
+      margin-top: 100px;
+    }
+    .team-members {
+      flex-direction: column;
+    }
+  
+    .team-member {
+      margin: 20px 0;
+    }
+  
+    .about-intro {
+      padding: 30px 15px;
+    }
+  
+    .team,
+    .mission {
+      padding: 30px 15px;
+    }
+  
+    .about-intro h1 {
+      font-size: 32px;
+    }
+  
+    .about-intro p {
+      font-size: 16px;
+    }
+  
+    .team h2,
+    .mission h2 {
+      font-size: 24px;
+    }
+  
+    .mission p {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-intro {
+      padding: 20px 10px;
+    }
+    .about-intro h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .team,
+    .mission {
+      padding: 20px 10px;
+    }
+  
+    .about-intro h1 {
+      font-size: 28px;
+    }
+  
+    .about-intro p {
+      font-size: 14px;
+    }
+  
+    .team h2,
+    .mission h2 {
+      font-size: 20px;
+    }
+  
+    .mission p {
+      font-size: 16px;
+    }
+  
+    .team-member {
+      padding: 10px;
+    }
+  }
+  
