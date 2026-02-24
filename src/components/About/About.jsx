@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Waleed from '../../Assets/huzaifa.jpg'
+import Waleed from '../../Assets/hassan.jpeg'
 import hassan from '../../Assets/newbobo.jpg'
 import member from '../../Assets/newmember.jpg'
 function About() {
@@ -17,7 +17,7 @@ function About() {
           <div className="team-members">
             <div className="team-member">
               <img src={Waleed} alt="Team Member 1" />
-              <h3>Huzaifa Ali</h3>
+              <h3>Hassan Maqbool</h3>
               <p>Founder & CEO</p>
             </div>
            
