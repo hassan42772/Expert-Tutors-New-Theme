@@ -14,8 +14,8 @@ function Footer() {
                         Our Tutors are specialized in their subjects and expert in guiding students to perform at their best level by understanding the capacity & interest of students.
                         </p>
                         <div className="contact">
-                            <span><i className="fas fa-phone" style={{color:'#a64da6'}}></i> &nbsp;+92 325 3055790</span><br />
-                            <span><i className="fas fa-envelope"></i> &nbsp;huzaifawattoo864@gmail.com</span>
+                            <span><i className="fas fa-phone" style={{color:'#a64da6'}}></i> &nbsp;+92 313 6064985</span><br />
+                            <span><i className="fas fa-envelope"></i> &nbsp;ranahassan427726@gmail.com</span>
                         </div>
                     </div>
                     <div className="footer-section links">
@@ -72,14 +72,15 @@ function Footer() {
                         <h2>Follow us</h2>
                         <br />
                         <div className="social-icons">
-                            <Link to=" https://wa.me/qr/RBUPQYPCQDZYB1" target='_blank'><i className="fab fa-facebook"></i></Link>
+                            <Link to=" https://www.linkedin.com/in/hassan-maqbool-7716113a8/" target='_blank'><i className="fab fa-linkedin"></i></Link>
                             
-                            <Link to="https://www.facebook.com/share/1Bn8JBZEC2/" target='_blank'><i className="fab fa-whatsapp"></i></Link>
+                            <Link to="https://github.com/hassan42772" target='_blank'><i className="fab fa-github"></i></Link>
+                            <Link to="https://www.instagram.com/07xhassan/" target='_blank'><i className="fab fa-instagram"></i></Link>
                         </div>
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    &copy; 2025 Expert Mind | Designed by Huzaifa Ali
+                    &copy; 2025 Expert Mind | Designed by Hassan Maqbool
                 </div>
             </footer>
         </>
