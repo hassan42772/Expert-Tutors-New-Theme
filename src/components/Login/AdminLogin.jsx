@@ -11,7 +11,7 @@ const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email === 'huzaifawattoo862@gmail.com' && password === '1234') {
+    if (email === 'ranahassan427726@gmail.com' && password === '1234') {
         console.log('Login successful');
         setEmail('');
         setPassword('');
