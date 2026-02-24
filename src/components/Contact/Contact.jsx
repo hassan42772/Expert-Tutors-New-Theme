@@ -11,7 +11,7 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_yq0orza', 'template_5xustdk', form.current, 'l0jCnRBoZ_jiohv07')
+        emailjs.sendForm('service_x327tdf', 'template_oic28ga', form.current, 'Kyzybq2rkIOpzSGjR')
             .then(() => {
                 setStatus('Message sent successfully!');
                 form.current.reset(); // Reset form fields after successful submission
@@ -28,15 +28,15 @@ function Contact() {
                 <div className="contact-details">
                     <div className="detail">
                         <i className="fas fa-phone" style={{ color: 'green' }}></i>
-                        <span>+92 325 3055790</span>
+                        <span>+92 313 6064985</span>
                     </div>
                     <div className="detail">
                         <i className="fas fa-envelope" style={{ color: '#a64da6' }}></i>
-                        <span>huzaifawattoo864@gmail.com</span>
+                        <span>ranahassan427726@gmail.com</span>
                     </div>
                     <div className="detail">
                         <i className="fas fa-map-marker-alt" style={{ color: 'red' }}></i>
-                        <span>Fasal Colony, Bahawalnagar, Pakistan</span>
+                        <span>Lahore, Bahawalnagar, Pakistan</span>
                     </div>
                 </div>
             </section>
